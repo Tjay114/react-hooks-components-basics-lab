@@ -1,3 +1,4 @@
+import { render } from "@testing-library/react";
 import React from "react";
 
 function NavBar() {
@@ -19,6 +20,7 @@ function Home() {
 {/* write an <About> component here */}
 
 
+
 function App() {
   return (
     <div>
@@ -27,6 +29,13 @@ function App() {
       {/* add your <About> component here */}
     </div>
   );
+}
+
+function App(){
+  render();{
+    <NavBar/>;
+    <Home/>;
+  }
 }
 
 export default App;
